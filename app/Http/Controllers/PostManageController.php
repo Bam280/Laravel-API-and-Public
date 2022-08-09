@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\DaftarWarga;
+use App\PostManage;
 
-class DaftarWargaController extends Controller
+class PostManageController extends Controller
 {
 
     public function __construct()
@@ -19,8 +19,8 @@ class DaftarWargaController extends Controller
      */
     public function index()
     {
-        $warga = DaftarWarga::all();
-        return view('admin.warga.index', compact('warga'));
+        $posts = PostManage::all();
+        return view('admin.postingan.index', compact('posts'));
     }
 
     /**
@@ -30,7 +30,7 @@ class DaftarWargaController extends Controller
      */
     public function create()
     {
-        return view('admin.warga.create');
+        //
     }
 
     /**
@@ -41,9 +41,8 @@ class DaftarWargaController extends Controller
      */
     public function store(Request $request)
     {
-        $store = DaftarWarga::create($request->all());
-        return redirect()->route('daftarwarga.index');
-        // return view('admin.warga.index');
+        $store = PostManage::create($request->all());
+        return redirect()->route('managepost.index');
     }
 
     /**
@@ -88,9 +87,8 @@ class DaftarWargaController extends Controller
      */
     public function destroy($id)
     {
-        $delete = DaftarWarga::find($id);
+        $delete = PostManage::find($id);
         $delete->delete();
-        return redirect()->route('daftarwarga.index');
-        // return view('admin.warga.index');
+        return redirect()->route('managepost.index');
     }
 }

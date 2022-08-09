@@ -67,7 +67,7 @@
 
         <ul class="sidebar-sub-nav collapse" id="navTables">
           <li class="sidebar-nav-item">
-            <a href="" class="sidebar-nav-link">
+            <a href="{{route ('managepost.index')}}" class="sidebar-nav-link">
               <span class="sidebar-nav-abbr">
                 Ps
               </span>
@@ -77,7 +77,7 @@
             </a>
           </li>
           <li class="sidebar-nav-item">
-            <a href="" class="sidebar-nav-link">
+            <a href="{{route('managepost.index')}}" class="sidebar-nav-link">
               <span class="sidebar-nav-abbr">
                 Pm
               </span>
