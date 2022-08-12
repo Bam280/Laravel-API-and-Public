@@ -8,7 +8,7 @@
     <!-- Title -->
     <title>GKJ Yeremia</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('aubna')}}/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('aubna')}}/assets/img/logo-gkj.png">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="{{asset('aubna')}}/assets/css/bootstrap.css">
     <!--Font Awesome css-->
