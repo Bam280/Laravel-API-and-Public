@@ -42,14 +42,14 @@
                   @endphp
                   @foreach($posts as $w)
                   <tr>
-                    <th scope="row">
+                    <th scope="row row-cols-2">
                       <label class="custom-control custom-checkbox m-0 p-0">
                         <input type="checkbox" class="custom-control-input table-select-row">
                         <span class="custom-control-indicator"></span>
                       </label>
                     </th>
                     <td>{{ $w -> title }}</td>
-                    <td>{{ $w -> created_at }}</td>
+                    <td>{{ $w -> created_at ->format('d-m-Y') }}</td>
                     <td><a href="
                       {{-- {{ route('managepost.destroy', ["id" => $w->id ]) }} --}}
                       " class="btn btn-sm btn-primary">Edit</a></td>

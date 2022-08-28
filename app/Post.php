@@ -8,5 +8,5 @@ class Post extends Model
 {
     protected $table = 'posts';
     protected $primaryKey = 'id';
-    protected $fillable = ['title', 'excerpt', 'body', 'published_at'];
+    protected $fillable = ['title', 'body', 'published_at'];
 }

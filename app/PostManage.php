@@ -8,5 +8,5 @@ class PostManage extends Model
 {
     protected $table = 'posts';
     protected $primaryKey = 'id';
-    protected $fillable = ['title', 'excerpt', 'body', ];
+    protected $fillable = ['title', 'body', ];
 }
