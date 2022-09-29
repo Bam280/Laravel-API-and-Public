@@ -21,7 +21,7 @@ class CreateWargaGkj extends Migration
             $table->longText('alamat');
             $table->string('no_hp');
             $table->string('wilayah');
-            $table->string('foto_profil');
+            $table->string('foto_profil')->nullable();
             $table->timestamps();
         });
     }
